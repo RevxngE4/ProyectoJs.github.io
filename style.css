@@ -1,0 +1,129 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #2C2C2C;
+    --text-color: #F3F6F5;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+p {
+    margin-bottom: 0.5rem;
+    line-height: 1.2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    border-top: 1px solid grey;
+    width: 100%;
+    text-align: center;
+}
+
+.search-form {
+    margin: 10px 20px;
+}
+
+.searchbox {
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.search {
+    width: 100%;
+    background-color: var(--text-color);
+    border: none;
+    font-size: 1rem;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.weather-card {
+    margin: 10px 20px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    display: none;
+}
+
+.city {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.date {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.temp-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+}
+.searchbox {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px; /* Agrega un margen a la derecha para separar el botón */
+}
+
+.search-button {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agrega una transición de color de fondo */
+}
+
+.search-button:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
